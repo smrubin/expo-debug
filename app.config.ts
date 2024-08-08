@@ -12,9 +12,8 @@ const expoConfig = (): ExpoConfig => ({
         [
             'expo-router',
             {
-                // Enable async routes: https://docs.expo.dev/router/reference/async-routes/
                 asyncRoutes: {
-                    web: true,
+                    web: true, // DEBUG: Disabling async routes will fix the issue.
                     default: 'development',
                 },
             },

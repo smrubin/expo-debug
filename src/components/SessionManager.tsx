@@ -15,6 +15,7 @@ const SessionManager = ({ children }) => {
         };
     }, []);
 
+    // DEBUG: Replacing null with <Slot /> or always rendering <>{children}</> here fixes the issue.
     return isClearingSession ? null : <>{children}</>;
 };
 
